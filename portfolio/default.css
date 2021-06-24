@@ -1,7 +1,7 @@
 
 
 .profile {
-    height: 400vh;
+    height: 365vh;
     display: flex;
     
 }
@@ -9,14 +9,39 @@
 .about-title {
     width: 80%;
     height: 100vh;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    margin: 0!important;
+    margin: 6%!important;
     position: sticky;
 	top: 0;
+}
+
+.about-title h2
+ {
 	
+	margin-left: 22%;
+}
+
+.about-title .resume {
+	
+	margin-left: 35%;
+}
+
+.about-title .firsttext {
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 8%;
+	font-size: 18px;
+
+}
+.about-title .secondtext {
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 8%;
+	font-size: 15px;
+	margin-top: 6%;
+	line-break: normal;
+
 }
 
 .about-pages div {
@@ -65,6 +90,12 @@
 .about-pages div:nth-child(5) {
 	background-color: rgb(255, 245, 245);
 	border:2px solid black;
+}
+.about-pages div:nth-child(6) {
+	background-color: rgb(255, 245, 245);
+	border:2px solid black;
+	
+
 }
 
 .fa {
@@ -174,8 +205,9 @@ h6 { font-size: 16px;}
 
 .s2{
 	background-color: var(--secondaryColor);
-	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
+	/* border-bottom:1px solid var(--borderColor); */
+	/* overflow:auto; */
+	margin: 5%;
 }
 
 
@@ -286,6 +318,7 @@ h6 { font-size: 16px;}
 	width: 200px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
+	margin-top: 10%;
 }
 
 
@@ -381,19 +414,24 @@ h6 { font-size: 16px;}
 
 #corner-tr{
 	top:-5px;
-	right: -5px
+	right: -5px;
 }
 
 
 #corner-br{
-	bottom:-5px;
-	right: -5px
+	bottom:-2px;
+	right: -2px;
 }
 
 
 #corner-bl{
-	bottom:-5px;
-	left: -5px
+	bottom:-1px;
+	left: -1px;
+	margin-top: -15%;
+}
+
+.fa-email {
+	margin-top: -32%;
 }
 
 .about-wrapper{
@@ -508,6 +546,9 @@ h6 { font-size: 16px;}
 	.main-container{
 		width: 95%;
 	}
+	/* html, body {
+		overflow-x: hidden;
+	} */
 }
 
 @media screen and (max-width: 800px){
@@ -523,13 +564,16 @@ h6 { font-size: 16px;}
 	.right-column{
 		justify-content: center;
 	}
+	/* html, body {
+		overflow-x: hidden;
+	} */
 
 }
 
 @media screen and (max-width: 400px){
 	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
+		max-width: 100%;
+		height: 100%;
 		padding-left: 10px;
 		padding-top: 10px;
 	}
@@ -537,6 +581,17 @@ h6 { font-size: 16px;}
 	#preview{
 		width: 280px;
 
+	}
+
+	/* html, body {
+		overflow-x: hidden;
+	} */
+
+	h1, h2, h3, h4, h5, h6, strong{
+		color: var(--mainText);
+		font-family: 'Press Start 2P', cursive;
+		font-weight: 500;
+		font-size: 5px;
 	}
 
 }
